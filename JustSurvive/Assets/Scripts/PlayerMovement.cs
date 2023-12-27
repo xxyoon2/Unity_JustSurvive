@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         // 메인 카메라(플레이어 뷰)의 시점에서 이동해야 할 방향을 구함
         dir = Camera.main.transform.TransformDirection(dir);
         dir.y = 0f;
-        //dir.Normalize();
+        dir.Normalize();
 
         _rigidbody.MovePosition(transform.position + dir * _moveSpeed * Time.deltaTime);
     }

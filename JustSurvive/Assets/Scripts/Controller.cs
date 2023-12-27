@@ -34,12 +34,5 @@ public class Controller : MonoBehaviour
 
         MouseX = Input.GetAxisRaw(MouseRotateXName);
         MouseY = Input.GetAxisRaw(MouseRotateYName);
-
-        //rotationX += rotSpeed * MouseY * Time.deltaTime;
-        //rotationY += rotSpeed * MouseX * Time.deltaTime;
-
-        //rotationX = Mathf.Clamp(rotationX, -30f, 30f);
-
-        //transform.eulerAngles = new Vector3(-rotationX, rotationY, 0f);
     }
 }
